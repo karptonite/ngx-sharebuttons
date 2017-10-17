@@ -1,5 +1,5 @@
 import { NgModule, InjectionToken } from '@angular/core';
-import { HttpClient, HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 import { ShareButtonsService } from '../services/share-buttons.service';
@@ -20,7 +20,6 @@ export function ShareButtonsFactory(httpClient: HttpClient, options: ShareButton
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
     HttpClientJsonpModule
   ],
   exports: [
